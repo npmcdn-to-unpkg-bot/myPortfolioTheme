@@ -1,0 +1,339 @@
+/*
+Theme Name: Zelentsov-portfolio
+Theme URI: cms.dp.ua
+Description: my portfolio
+Author: Sergey Zelentsov
+Author URI: cms.dp.ua
+Version: v1.0
+
+*/
+@import url('../zelentsov-portfolio/bootstrap/css/bootstrap.min.css');
+
+$brand-size:180%;
+$brand-family:'Raleway', sans-serif;
+
+#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #4A5D73;
+    z-index: 100500;
+}
+
+#page-preloader .spinner {
+    width: 350px;
+    height: 32px;
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    background: url('../zelentsov-portfolio/img/spinner.gif') no-repeat 50% 50%;
+    margin: -16px 0 0 -16px;
+}
+
+@media screen and (max-width: 500px) {
+	#page-preloader .spinner {
+		left: 5%;
+	}
+}
+
+/* start header */
+.navbar-default{
+	background-color: #4A5D73;
+	border-radius: 0px;
+	margin:0px!important;
+	padding-left: 5vw!important;
+	padding-right:5vw!important;
+}
+
+.navbar-brand{
+	font-family: $brand-family;
+	font-size: $brand-size;
+	color: #fff!important;
+	font-weight: 600;
+	text-shadow: 3px 3px 5px #2c2c2c;
+	transition: all .5s;
+	padding: 10px!important;
+	span{
+		font-size: 20px;
+		-webkit-transition: -webkit-transform 1.5s;
+    	-moz-transition: -moz-transform 1.5s;
+    	-ms-transition: -moz-transform 1.5s;
+    	-o-transition: -o-transform 1.5s;
+    	transition: transform 1.5s;
+	}
+	p{
+		font-size: 11px;
+		text-align: right;
+	}
+}
+.navbar-brand:hover{
+  	text-shadow: -1px -1px #000,0 1px 0 #444;
+    span{
+    	-webkit-transform: rotateY( 180deg );
+		-moz-transform: rotateY( 180deg );
+		-ms-transform: rotateY( 180deg );
+		-o-transform: rotateY( 180deg );
+		transform: rotateY( 180deg );
+    }
+}
+
+
+.navbar-nav{
+	li a{
+		color: #fff!important;
+		font-family: 'Ubuntu', sans-serif;
+		-webkit-transition: -webkit-all 2s;
+    	-moz-transition: -moz-all 2s;
+    	-ms-transition: -moz-all 2s;
+    	-o-transition: -o-all 2s;
+		transition: all 2s;
+	}
+	li a:hover{
+		background: #96B0CC!important;
+		text-shadow: 3px 3px 3px #000, 0 0 3em #010000;
+		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+		transition: all 2s;
+	}
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	background: #96B0CC!important;
+	text-shadow: 1px 1px 1px #000, 0 0 3em #010000;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	transition: all 2s;
+}
+
+@media screen and (max-width: 500px) {
+	.navbar-default{
+		padding: 0px!important;
+	}
+}
+
+/* end header */
+/* start main*/
+.hello{
+	background: #507299;
+	padding-top: 5%;
+	.imgCont{
+		height: 35em;
+		background: url('../zelentsov-portfolio/img/helloimg.png') no-repeat;
+		background-size: contain;
+		background-position: right;
+	}
+	.textCont{
+		height: 35em;
+		text-align: right;
+		padding-top: 10%;
+		p{
+			font-family: $brand-family;
+			font-size: 25px;
+			text-shadow: 3px 3px 5px #1A3D63;
+			color: #F5D9AF;
+			span{
+				color: #EABA71;
+				span{
+					text-decoration: underline;
+				}
+			}
+		}
+		h1{
+			font-family: 'Ubuntu', sans-serif;
+			font-size: 90px;
+			color: #fff;
+			text-shadow: 3px 3px 5px #2c2c2c;
+		}
+	}
+}
+@media screen and (min-width: 1600px) {
+	.hello{
+		height: 95vh;
+		padding-top: 10%;
+	}
+}
+@media screen and (max-width: 1280px) {
+	.hello{
+		height: 95vh;
+		padding-top: 15%;
+	}
+}
+@media screen and (max-width: 500px) {
+	.hello{
+		padding-top: 35%;
+		height: 92vh;
+	}
+	.imgCont{
+		display: none;
+	}
+	.textCont{
+		p{
+			text-align: center;
+		}
+		h1{
+			font-size: 60px!important;
+			text-align: center;
+		}
+	}
+}
+
+
+/*end main*/
+
+/*start about*/
+.about{
+	border-style: solid;
+	border-width: 27px;
+	-moz-border-image: url('../zelentsov-portfolio/img/border.png') 27 round;
+	-webkit-border-image: url('../zelentsov-portfolio/img/border.png') 27 round;
+	-o-border-image: url('../zelentsov-portfolio/img/border.png') 27 round;
+	border-image: url('../zelentsov-portfolio/img/border.png') 27 fill round;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	margin-top: -1em;
+}
+
+article{
+	background-color: #4A5D73;
+	margin-top: -1em;
+	padding-top: 3em;
+	padding-bottom: 15em;
+	h1{
+		text-align: center;
+		margin-bottom: 2em;
+		font-family: 'Ubuntu', sans-serif;
+		color: #fff;
+		text-shadow: 3px 3px 5px #2c2c2c;
+		text-decoration: underline;
+	}
+	.row div ul{
+		list-style: none;
+		font-family: $brand-family;
+		text-shadow: 3px 3px 5px #1A3D63;
+		color: #fff;
+		font-size: 20px;
+		li{
+			margin-bottom: 10px;
+		}
+		li a{
+			color: #F5D9AF;
+			text-decoration: none;
+		}
+		li span{
+			color: #F5D9AF;
+			text-shadow: 3px 3px 5px #2c2c2c;
+		}
+	}
+	.progress-striped{
+		height: 7px;
+	}
+	main{
+		ul{
+		list-style: none;
+		font-family: $brand-family;
+		text-shadow: 3px 3px 5px #1A3D63;
+		color: #fff;
+		font-size: 20px;
+		margin-top: 60px;
+		padding-left: 0px!important;
+		li{
+			text-align: center;
+			color: #F5D9AF;
+			text-shadow: 3px 3px 5px #2c2c2c;
+			}
+		}
+	}
+	.skills{
+		div{
+			ul{
+				li{
+					text-align: left;
+					span{
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+	#myAch{
+		height: 100px;
+		margin-top: 1em;
+		margin-bottom: -7em;
+		img{
+			width: 15%;
+			margin: 0.5em;
+			-webkit-transition: all 0.5s ease-out 0.5s;
+     		-moz-transition: all 0.5s ease-out 0.5s;
+     		-o-transition: all 0.5s ease-out 0.5s;
+     		transition: all 0.5s ease-out 0.5s;
+		}
+		img:hover{
+			width: 18%;
+			cursor: pointer;
+		}
+	}
+	.FullImage{
+		width: 55em;
+		height: 38em;
+		position: absolute;
+		bottom: 1em;
+		left: 20%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.closeBut{
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		width: 5em;
+		height: 5em;
+		background: url('../zelentsov-portfolio/img/close_4-512.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+@media screen and (max-width: 500px) {
+	article{
+		h1{
+			margin-bottom: 1em!important;
+		}
+		.row img{
+			margin-bottom: 2em!important;
+		}
+	}
+	.FullImage{
+		width: 25em!important;
+		height: 20em!important;
+		left: 0px!important;
+	}
+}
+/*end about*/
+
+/*start portfolio*/
+
+.portfolio{
+	border-style: solid;
+	border-width: 27px;
+	-moz-border-image: url('../zelentsov-portfolio/img/border-portfolio.png') 27 round;
+	-webkit-border-image: url('../zelentsov-portfolio/img/border-portfolio.png') 27 round;
+	-o-border-image: url('../zelentsov-portfolio/img/border-portfolio.png') 27 round;
+	border-image: url('../zelentsov-portfolio/img/border-portfolio.png') 27 fill round;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	margin-top: -1em;
+	padding: 0px;
+	article{
+		height: 100vh;
+		background-color: #95A5B9;
+		margin-top: -1em;
+		padding-top: 3em;
+		padding-bottom: 9em;
+	}
+}
+
+/*end portfolio*/
